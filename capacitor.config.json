@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "supershopper",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

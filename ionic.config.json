@@ -1,0 +1,7 @@
+{
+  "name": "supershopper",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
