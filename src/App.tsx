@@ -21,18 +21,22 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+import Settings from "./pages/Settings";
 
 setupIonicReact();
 
-const App: React.FC = () => (
+const App = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route exact path="/home">
+        <Route exact path="/notebook">
           <Notebook />
         </Route>
+        <Route exact path="/settings">
+          <Settings />
+        </Route>
         <Route exact path="/">
-          <Redirect to="/home" />
+          <Redirect to="/notebook" />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

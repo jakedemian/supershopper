@@ -8,11 +8,13 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import ExploreContainer from "../components/ExploreContainer";
+import ExploreContainer from "../../components/ExploreContainer";
 import "./Notebook.css";
-import { settingsOutline, addOutline, create } from "ionicons/icons";
+import { settingsOutline, addOutline } from "ionicons/icons";
+import { useHistory } from "react-router";
 
-const Notebook: React.FC = () => {
+const Notebook = () => {
+  const history = useHistory();
   return (
     <IonPage>
       <IonHeader>
@@ -21,7 +23,7 @@ const Notebook: React.FC = () => {
             <IonButton>
               <IonIcon slot="icon-only" icon={addOutline}></IonIcon>
             </IonButton>
-            <IonButton>
+            <IonButton onClick={() => history.push("/settings")}>
               <IonIcon slot="icon-only" icon={settingsOutline}></IonIcon>
             </IonButton>
           </IonButtons>
