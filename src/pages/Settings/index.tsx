@@ -21,8 +21,6 @@ const Settings = () => {
           <div style={{ display: "flex" }}>
             <IonButtons slot="primary">
               <IonButton onClick={() => history.goBack()}>
-                {/* TODO FIXME this isnt good enough */}
-                {/* TODO FIXME needs to use react router's go back functionality */}
                 <IonIcon slot="icon-only" icon={arrowBackOutline}></IonIcon>
               </IonButton>
             </IonButtons>
